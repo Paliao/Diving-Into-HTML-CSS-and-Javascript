@@ -1,3 +1,7 @@
+/* -------------------------------------------------------------- */
+/* BASIC SETUP */
+/* -------------------------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +16,74 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------------------- */
+/* REUSABLE COMPONENT */
+/* -------------------------------------------------------------- */
+
+h1 {
+  margin: 0;
+  color: white;
+  font-size: 240%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------- */
+/* BUTTONS */
+/* -------------------------------------------------------------- */
+
+.btn:link,
+.btn:visited {
+  display: inline;
+  padding: 10px 30px;  
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  color: white;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid white;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;  
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #cf6d17;  
+  color: white;
+}
+
+/* -------------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------------- */
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/hero.jpg');
   background-size: cover;
@@ -25,8 +97,4 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-h1 {
-  margin: 0;
 }
